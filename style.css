@@ -73,7 +73,7 @@ a {
   
 }
 #section1 > h2 {
-  margin-top: 145px;
+  margin-top: 200px;
   font-size: 40px;
   color: #eee;
 }
@@ -218,6 +218,8 @@ body::before {
   }
   #section1 > h2 {
     font-size: 35px;
+    margin-top: 150px;
+    
   }
 
    #Cars {
