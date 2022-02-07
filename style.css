@@ -130,8 +130,12 @@ body::before {
 
 #footer {
   width: 100%;
-  background: rgba(00, 00, 00, 0.2);
+  background: rgba(00, 00, 00, 0.9);
   margin-top: 100px;
+  color: rgba(255,255,255, 0.9);
+}
+#footer > ul > li > a {
+  color: white;
 }
 
 #footer > ul {
