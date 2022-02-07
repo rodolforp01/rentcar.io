@@ -212,6 +212,14 @@ body::before {
 /*Phone responsiveness setup*/
 @media only screen and  (max-width: 600px)
 {
+
+  #container > p {
+    font-size: 28px;
+  }
+  #section1 > h2 {
+    font-size: 35px;
+  }
+
    #Cars {
     display: table-column;
    }
