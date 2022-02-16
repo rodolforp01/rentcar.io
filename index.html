@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Red King Rent Car</title>
   <link rel="stylesheet" href="./style.css">
-
+  
 
   <link rel = "icon" href = 
 "Images/icon.png" 
@@ -196,26 +196,6 @@
   </div>
 </div>
 <!-- partial -->
-<script>
-  function myFunction(){
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-
-      for(i=0; i<dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if(openDropdown.classList.contains('show')){
-          openDropdown.classList.remove('show');
-        }
-
-      }
-    }
-  }
-
-</script>
+<script src="./btn.js"></script>
 </body>
 </html>
