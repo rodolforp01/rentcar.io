@@ -223,9 +223,7 @@ body::before {
 {
 
   .dropdown {
-    
     display: flex;
-    
   }
 
   nav {
@@ -275,7 +273,7 @@ body::before {
    #header {
      width: 100%;
      background: #eee;
-     
+     position: fixed;
      align-items: center;
      display: flex;
      padding: 0;
