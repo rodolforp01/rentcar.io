@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Red King Rent Car</title>
+  <link rel="stylesheet" href="./style.css">
+
+
+  <link rel = "icon" href = 
+"Images/icon.png" 
+  type = "image/x-icon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="page-wrapper">
+
+  <header id="header">
+    <div id="logo">
+      
+      <!--Media query to execute logo image based on browser dark or white mode-->
+        <picture>
+          <source
+            srcset="dark.png"
+            media="(prefers-color-scheme: white)">
+          <img id="header-img" src="Images/rent-car-logo.png">
+        </picture>
+      <!--Ends here-->
+    </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="nav-link" href="">Home</a>
+        <a class="nav-link" href="#footer">Contact Us</a>
+        <a class="nav-link" href="#pricess"> Cars & Prices</a>
+        <a class="nav-link" href="#footer">Location</a>
+      </div>
+    </div>
+
+    <div>
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#section1">Home</a>
+          </li>
+          
+          <li>
+            <a class="nav-link" href="#footer">Contact Us</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#pricess"> Cars & Prices</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#footer">Location</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="section1">
+    <h2>Get the best Car Ever <br> With the Best Punta Cana's Rent Car</h2>
+
+  </section>
+
+  <div id="container">
+    <p>We will deliver the car right where you're at!!</p>
+    
+    <div id="video-area">
+          <iframe
+                id="video"
+                src="https://www.youtube-nocookie.com/embed/-xvnpYr7hsc?rel=0&amp;controls=0&amp;showinfo=0"
+                height="315"
+                frameborder="0"
+                allowfullscreen
+                >
+        </iframe>
+    </div>
+    
+    <p id="pricess"> Here is what we got for you: </p>
+
+     <section id="Cars">
+       <div class="product" id="kiak5">
+         <div class="level">Kia k5 white</div>
+         <img src="Images/Kiak5Blanco.jpg">
+         <h2> USD$ 50 p/Day</h2>
+         <form action="https://wa.me/18293320110">
+          <input type="submit"
+                 id="submit"
+                 value="Order now!"
+                 class="btn"
+                 target="_blank"
+          />
+       </div>
+       
+       <div class="product" id="camry14">
+         <div class="level"> Camry 2014</div>
+         <img src="Images/camry-2014.jpg">
+         <h2> USD$ 70 p/Day</h2>
+         <form action="https://wa.me/18293320110">
+          <input type="submit"
+                 id="submit"
+                 value="Order now!"
+                 class="btn"
+                 target="_blank"
+          />
+       </div>
+       
+       <div class="product" id="kiak5grey">
+         <div class="level">Kia k5 Grey</div>
+
+         <img src="Images/kia-grey.jpg">
+         <h2> USD$ 50 p/Day</h2>
+         <form action="https://wa.me/18293320110">
+          <input type="submit"
+                 id="submit"
+                 value="Order now!"
+                 class="btn"
+                 target="_blank"
+          />
+       </div>
+       
+       <div class="product" id="suvurvan">
+         <div class="level">Suburban chevrolet</div>
+         <img src="Images/chevrolet.jpg">
+         
+        <p><strong>Minimun of 7 days rent required to get this car.</strong></p> 
+            
+         <h2> USD$ 150 p/Day</h2>
+         <form action="https://wa.me/18293320110">
+           <input type="submit"
+                  id="submit"
+                  value="Order now!"
+                  class="btn"
+                  target="_blank"
+           />
+         </form>
+       </div>
+     </section>
+    
+    
+    <section id="form-section">
+          <h2>Get the latest Updates from red king</h2>
+
+        <form id="form"
+              action="https://wa.me/18293320110"
+              >
+          <input 
+                   name="email"
+                   id="email" 
+                   type="email"
+                   placeholder="Enter your email"
+                   required
+                   /><br><br>
+          <input 
+                 type="submit" 
+                 id="submit"
+                 value="Get Offers" 
+                 class="btn"
+                 target="_blank"
+                 />
+
+          </form>
+          <h2>Don't miss out!!</h2>
+      
+    </section>
+
+    <footer id="footer">
+      <ul>
+        <li><a href="https://api.whatsapp.com/send/?phone=18293320110&text=im+interested+on+renting+a+car&app_absent=0" target="_blank"><img src="Images/ws.png" width="30" alt="Whatsapp"></a></li>
+        <li><a href="#" target="_blank"><img src="Images/fb.png" width="30" alt="Facebook"></a></li>
+        <li><a href="#" target="_blank"><img src="Images/instagram.png" width="30" alt="Instagram"></a></li>
+      </ul>
+      
+      <div id="location">
+        <p>
+          Location:<br><br>
+          Punta Cana<br> 
+          bavaro friusa<br> 
+          Av.España<br>
+          Postal 23000<br>
+          Dominican Republic.<br><br>
+          &#169;2022 RP all rights reserved.
+        </p>
+      </div>
+     
+      
+
+      
+    </footer>
+
+  </div>
+</div>
+<!-- partial -->
+<script>
+  function myFunction(){
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+
+      for(i=0; i<dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if(openDropdown.classList.contains('show')){
+          openDropdown.classList.remove('show');
+        }
+
+      }
+    }
+  }
+
+</script>
+</body>
+</html>

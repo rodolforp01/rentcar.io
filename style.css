@@ -72,10 +72,12 @@ a {
  
   
 }
-#section1 > h2 {
-  margin-top: 200px;
+#section1 > h2{
+  
+  margin-top: 150px;
   font-size: 40px;
-  color: #eee;
+  color: white;
+
 }
 
 #container {
@@ -183,8 +185,15 @@ body::before {
 
 
 /*PC responsiveness set up*/
-@media (min-width: 600px)
+@media (min-width: 630px)
 {
+
+  .dropdown {
+    position: relative;
+    display: none;
+  }
+
+    
     .product {
       display: flex;
       flex-direction: column;
@@ -213,17 +222,28 @@ body::before {
 @media only screen and  (max-width: 600px)
 {
 
+  .dropdown {
+    
+    display: flex;
+    
+  }
+
+  nav {
+    display:none;
+  }
+
   #container > p {
     font-size: 28px;
-  }
-  #section1 > h2 {
-    font-size: 35px;
-    margin-top: 120px;
-    
   }
 
    #Cars {
     display: table-column;
+   }
+
+   #section1 > h2 {
+     font-size: 35px;
+     margin-top: 120px;
+     color:white;
    }
 
    #Cars > .product {
@@ -243,24 +263,19 @@ body::before {
      text-align: center;
    }
 
-   #nav-bar > ul {
-     display: flex;
-     flex-direction: column;
-     width: 30vw;
-     justify-content: space-around;
-   }
+   
 
    #header-img {
      width: 230px;
      height: 50px;
      justify-content: center;
-     margin-left: 0;
+     margin-left: -19px;
    }
 
    #header {
      width: 100%;
      background: #eee;
-     justify-content: space-around;
+     
      align-items: center;
      display: flex;
      padding: 0;
@@ -273,5 +288,52 @@ body::before {
     justify-content: center;
     text-align: center;
   }
+}
 
+
+/*Mobile Responsiveness menu*/
+.dropbtn {
+  background-color: #171a1b;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: -60px;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  left: 0;
+}
+
+.dropdown-content ul li {
+  margin-left: -55px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display:block;
+  margin-left: -80px;
 }
