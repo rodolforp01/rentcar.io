@@ -212,7 +212,7 @@ body::before {
     }
 
     #header {
-      position: fixed;
+      position: sticky;
     }
 
 }
