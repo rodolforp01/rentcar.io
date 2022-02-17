@@ -213,7 +213,12 @@ body::before {
     }
 
     #header {
-      position: sticky;
+      position: fixed;
+      margin-top: -9px;
+    }
+
+    #header-img {
+      margin-left: 17px;
     }
 
 }
