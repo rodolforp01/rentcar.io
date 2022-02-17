@@ -40,8 +40,9 @@ html {
 nav > ul{
   display: flex;
   flex-direction: row;
-  width: 35vw;
-  justify-content: space-around;
+  width: 43vw;
+  justify-content: space-between;
+  margin-right: 31px;
   
 }
 
@@ -185,7 +186,7 @@ body::before {
 
 
 /*PC responsiveness set up*/
-@media (min-width: 630px)
+@media (min-width: 900px)
 {
 
   .dropdown {
@@ -219,7 +220,7 @@ body::before {
 
 
 /*Phone responsiveness setup*/
-@media only screen and  (max-width: 600px)
+@media only screen and  (max-width: 900px)
 {
 
   .dropdown {
