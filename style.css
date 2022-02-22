@@ -85,7 +85,7 @@ a {
   margin-top: 8%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(255,255,255, 1);
   text-align: center;
   width: 100%;
   height: 100%;
@@ -228,6 +228,20 @@ body::before {
 @media only screen and  (max-width: 900px)
 {
 
+  .grid {
+    flex-direction: column;
+    margin: 40px 0;
+    
+  }
+  .content-grid > h2 {
+    text-align: center;
+  }
+  .content-grid {
+    text-align:center;
+    margin: 0% 4%;
+    
+  }
+
   .dropdown {
     display: flex;
   }
@@ -340,4 +354,31 @@ body::before {
 .show {
   display:block;
   margin-left: -80px;
+}
+
+
+/*benefits section*/
+#benefits-section 
+{
+  max-width: 816px;
+  margin: 0 auto;
+}
+.grid {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  margin: 3% 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4%;
 }
