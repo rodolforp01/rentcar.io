@@ -233,6 +233,9 @@ body::before {
     margin: 40px 0;
     
   }
+  #fix-delivery {
+    margin-top: 50px;
+  }
   .content-grid > h2 {
     text-align: center;
   }
