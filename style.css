@@ -228,7 +228,8 @@ body::before {
 
 }
 
-@media only screen and (max-width: 350px)
+/*Phone responsive smaller*/
+@media only screen and (max-width: 400px)
 {
   #section1 > h1
   {
