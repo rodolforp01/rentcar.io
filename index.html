@@ -201,7 +201,7 @@
         </div>
 
         <div class="product" id="kiak5">
-          <div class="level">Kia Picanto 2023</div>
+          <div class="level">Kia Picanto 2022</div>
           <img class="renegade" src="Images/kiapicanto.jpg">
           <h2> USD$ 50 p/Day</h2>
           <form action="https://wa.me/18293320110">
@@ -264,7 +264,27 @@
 
   </div>
 </div>
+
+<div id="myDiv"></div>
 <!-- partial -->
 <script src="./btn.js"></script>
+<script type="text/javascript" src="./wsicon/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./wsicon/floating-wpp.min.js"></script>
+<link rel="stylesheet" href="./wsicon/floating-wpp.css">
 </body>
+
+<script type="text/javascript">
+  $(function () {
+    $('#myDiv').floatingWhatsApp({
+      phone: '18293320110',
+      headerTitle: 'Welcome to Rent King',
+      popupMessage: 'Hi! How may I help you.',
+      showPopup: true,
+      headerColor: 'crimson',
+      backgroundColor: 'crimson',
+      position: 'right'
+
+    });
+  });
+</script>
 </html>
