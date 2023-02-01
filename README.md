@@ -1,1 +1,1 @@
-A rent car e-commer website for practicing html css and js (beginner)
+A rent car e-commerce website for practicing html css and js (beginner)
