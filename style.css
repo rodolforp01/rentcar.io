@@ -1,9 +1,24 @@
+
 html {
   font-family: 'Poppins', sans-serif;
 }
 
 #page-wrapper {
   position: relative;
+}
+
+.greenLowPrice {
+    text-transform: uppercase;
+    padding: 6px 8px;
+    font-family: JetBrains Mono, sans-serif;
+    font-size: .875rem;
+    display: inline-block;
+    width: fit-content;
+}
+
+.greenLowPrice.low {
+    background-color:#51ff00;
+    color: #000;
 }
 
 #form-section {
@@ -17,8 +32,9 @@ html {
 }
 
 #header {
+  backdrop-filter: blur(10px);
+  background: rgba(245, 245, 245, .75);
   width: 100%;
-  background: #eee;
   padding: 10px 0px 0px 0px;
   justify-content: space-around;
   align-items: center;
@@ -26,6 +42,7 @@ html {
 }
 #logo {
   width: 60vw;
+  margin-left: 2rem;
 }
 #header-img {
   width: 280px;
@@ -55,8 +72,10 @@ a {
 }
 
 .nav-link{
-  font-size: 20px;
-  font-weight: 700;
+    margin-left: 1rem;
+    margin-right: 1.75rem;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .nav-link:hover{
@@ -65,15 +84,16 @@ a {
 
 
 #section1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4%;
+    height: 100vh;
  
   
 }
+
+
 #section1 > h1
 {
     margin: 0;
@@ -87,10 +107,30 @@ a {
   margin: 0;
 }
 
+.btnReserve {
+  color: #000;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  background-color: #51ff00;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .2s, background-color .2s;
+  display: flex;
+}
+
+.btnReserve:hover {
+  background:rgba(245, 245, 245, .75);
+  cursor: pointer;
+}
+
 #container {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255,255,255, 1);
+  background-color: rgb(232 249 215);
   text-align: center;
   width: 100%;
   height: 100%;
@@ -125,13 +165,18 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
+
+/*
   background: var(--color-darkblue);
   background-image: linear-gradient(
       180deg,
       rgba(00, 00, 00, 0.4),
       rgba(00, 00, 00, 0.8)
     ),
-    url(https://i.imgur.com/q0PK8bm.jpg);
+    url(https://i.imgur.com/aMBbzo6.jpeg);
+*/
+
+background-image: linear-gradient(to top, #000, rgba(0, 0, 0, .6) 0%, rgba(255, 255, 255, 0) 0%), linear-gradient(73deg, rgba(0, 0, 0, .9) 0.5%, rgba(255, 255, 255, .15) 68%), url(https://i.imgur.com/aMBbzo6.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -200,8 +245,8 @@ body::before {
 {
 
   .dropdown {
-    position: relative;
     display: none;
+    
   }
 
     
@@ -225,6 +270,8 @@ body::before {
     #header {
       position: fixed;
       margin-top: -9px;
+      backdrop-filter: blur(10px);
+      background: rgba(245, 245, 245, .75);
     }
 
     #header-img {
@@ -244,10 +291,16 @@ body::before {
     font-size: 1.2rem;
   }
 }
-/*Phone responsiveness setup*/
+/*Phone responsiveness setup if width is less than 900px*/
 @media only screen and  (max-width: 900px)
 {
 
+  body::before {
+	background-image: linear-gradient(to top, #000, rgba(0, 0, 0, .6) 0%, rgba(255, 255, 255, 0) 0%), linear-gradient(73deg, rgba(0, 	0, 0, .4) 100%, rgba(255, 255, 255, .15) 68%), url(https://i.imgur.com/aMBbzo6.jpeg);
+  }
+  .btnReserve {
+	background-color: white;
+  }
   .grid {
     flex-direction: column;
     margin: 40px 0;
@@ -267,11 +320,19 @@ body::before {
 
   .dropdown {
     display: flex;
+	margin-left: 2rem;
   }
 
-  nav {
+  #nav-bar {
     display:none;
   }
+
+  .nav-link{
+    margin-left: 0rem;
+    margin-right: 0rem;
+    font-size: 20px;
+    font-weight: 700;
+   }
 
   #container > p {
     font-size: 28px;
@@ -331,7 +392,6 @@ body::before {
 
    #header {
      width: 100%;
-     background: #eee;
      position: fixed;
      align-items: center;
      display: flex;
@@ -356,7 +416,6 @@ body::before {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  margin-right: -60px;
 
 }
 
@@ -412,6 +471,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
+	margin-left: 3rem;
   
 }
 
